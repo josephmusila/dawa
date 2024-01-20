@@ -2,26 +2,34 @@
     /* background-color: rgb(94, 2, 37); */
     /* height: 100vh; */
     background-image: url(../images/bgr44.jpg);
-    width: 100%;
+    /* width: 100vw; */
+    /* background-color: aqua; */
 }
 
 body{
+    width: 100vw;
+    padding: 0;
     position: relative;
 }
 
 .navbar{
     height: 4rem;
     background-color: rgba(255, 255, 255, 0.322);
-    width: 100%;
+    /* widt h: 100vw; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .nav-order-btn{
     background-color: red;
     color: white;
     border: 1px solid white;
+}
+
+.nav-logo{
+    display: none;
 }
 
 .product-section{
@@ -63,9 +71,12 @@ body{
 }
 
 .countdown span{
-    background-color: yellow;
-    padding: 0.1rem;
+    background-color: rgb(230, 153, 11);
+    padding: 0.9rem;
     border-radius: 0.1rem;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    color: white;
 }
 
 .product-details{
@@ -124,9 +135,15 @@ body{
 }
 
 /* setion 4 */
+.pills{
+    display: none;
+}
+
+
 .section4{
     margin-top: 4rem;
 }
+
 .section4-title{
     text-align: center;
 }
@@ -135,6 +152,10 @@ body{
     padding: 2rem;
     margin: auto;
     border: 3px solid red;
+}
+.section55{
+    display: none;
+    /* background-color: aqua; */
 }
 
 /* section5 */
@@ -178,10 +199,12 @@ body{
 }
 
 .section7-btn{
-    width: 100%;
+    width: 70%;
     padding: 2rem;
     font-size: 2rem;
     color: red;
+    border: 2px solid red;
+    border-radius: 0.5rem;
 }
 
 .keep-heart{
@@ -285,6 +308,11 @@ border-radius: 1rem;
 
 .sect12-cost{
     font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.hurry{
+    text-align: center;
 }
 .sect12-time{
     margin-top: 1rem;
@@ -331,7 +359,11 @@ border-radius: 1rem;
 /* disclaimer */
 
 .disclaimer{
-    margin-top: 2rem;
+    margin: auto;
+    padding: 1rem;
+    /* background-color: red; */
+    /* width: 95vw; */
+
 }
 
 .disclaimer h1{
