@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set the initial time in seconds
     let timeInSeconds = 30 * 60; // 30 minutes
   
-    // Get the timer elements using classes
-    const hoursElement = document.querySelector(".hours");
-    const minutesElement = document.querySelector(".minutes");
-    const secondsElement = document.querySelector(".seconds");
+    // Get the timer elements
+    const hoursElement = document.getElementById("hours");
+    const minutesElement = document.getElementById("minutes");
+    const secondsElement = document.getElementById("seconds");
   
     // Update the timer every second
     const timerInterval = setInterval(updateTimer, 1000);
@@ -60,7 +60,12 @@ document.addEventListener("DOMContentLoaded", function () {
       secondsElement.textContent = String(seconds).padStart(2, "0");
   
       // Check if the timer has reached 0
-      
+      if (timeInSeconds <= 0) {
+        clearInterval(timerInterval); // Stop the timer
+        alert("Time's up!"); // You can customize the action when the timer reaches 0
+      } else {
+        timeInSeconds--; // Decrement the time
+      }
     }
   });
   
