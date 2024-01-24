@@ -14,12 +14,38 @@ body{
 
 .navbar{
     height: 4rem;
-    background-color: rgba(255, 255, 255, 0.322);
+    background-color: rgba(12, 11, 11, 0.322);
     /* widt h: 100vw; */
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    /* justify-content: space-between; */
     align-items: center;
+    z-index: 4  ;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.nav-toggle{
+    position: absolute;
+    left: 2rem;
+    top: 4rem;
+    background-color: white;
+    padding: 2rem 3rem;
+    text-decoration: none;
+    display: none;
+}
+
+.nav-toggle p a{
+    text-decoration: none;
+}
+
+.sticky-nav{
+    position: fixed;
+    top: 3;
+     background: rgb(10, 10, 77);
+   
 }
 
 .nav-order-btn{
