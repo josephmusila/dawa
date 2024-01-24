@@ -1,9 +1,11 @@
 .hero-section{
     /* background-color: rgb(94, 2, 37); */
     /* height: 100vh; */
-    background-image: url(../images/bgr44.jpg);
+    background-image: url(../images/hero.png);
+    background-repeat: no-repeat;
     /* width: 100vw; */
-    /* background-color: aqua; */
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
 }
 
 body{
@@ -20,11 +22,18 @@ body{
     flex-direction: row;
     /* justify-content: space-between; */
     align-items: center;
+    transition: 0.5s ease-in-out;
     z-index: 4  ;
-    position: relative;
+    position: sticky;
     padding-left: 2rem;
     padding-right: 2rem;
     cursor: pointer;
+    top: 0;
+}
+
+.navv{
+    display: flex;
+     gap: 3rem;
 }
 
 .nav-toggle{
@@ -39,14 +48,26 @@ body{
 
 .nav-toggle p a{
     text-decoration: none;
+    color: red;
+}
+.nav-item{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.sticky-nav{
-    position: fixed;
-    top: 3;
-     background: rgb(10, 10, 77);
-   
+.nav-item:hover{
+    color: red;
 }
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(49, 48, 48, 0.486);
+    background-color: #777474;
+  }
 
 .nav-order-btn{
     background-color: red;
@@ -58,29 +79,79 @@ body{
     display: none;
 }
 
+.hero-text{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-text h5{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-text button{
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 0.4rem;
+    border: 1px solid;
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+}
+
+#product-1{
+    width: 60vw;
+}
+
 .product-section{
     /* height: 70vh; */
-    width: 70vw;
-    border: 8px solid white;
+    /* width: 70vw; */
+    padding: 1rem;
+    border: 1px solid rgba(36, 1, 1, 0.253);
     margin: auto;
     border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.288);
+    background-color: rgb(255, 255, 255);
+}
+.functionality{
+    padding: 1rem;
+}
+
+.product1-image{
+    overflow: hidden;
+}
+
+.product1-image img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .product-name{
-    font-size: 2rem;
-    color: white;
+    font-size: 1.5rem;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .functions{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    /* font-size: 0.9rem; */
 }
 
 .big-sale{
     margin: 2rem 0rem;
     font-size: 1.5rem;
-    color: white;
+    color: rgb(5, 5, 5);
 }
 
 .big-sale span{
@@ -88,7 +159,7 @@ body{
     text-decoration: line-through;
 }
 .cost{
-    color: white;
+    color: rgb(3, 2, 2);
     font-size: 1.5rem;
 }
 
@@ -113,9 +184,9 @@ body{
 
 .buy-now{
     padding: 1rem 3rem;
-    width: 70%;
+    /* width: 70%; */
     color: red;
-    font-size: 2rem;
+    font-size: 1rem;
     border: none;
     transition: 0.5s ease-in-out;
 }
@@ -177,7 +248,7 @@ body{
 .section4-description{
     padding: 2rem;
     margin: auto;
-    border: 3px solid red;
+    border: 1px solid red;
 }
 .section55{
     display: none;
@@ -185,6 +256,19 @@ body{
 }
 
 /* section5 */
+
+sect5-image-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: red;
+}
+
+.sect5-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 .section5{
     margin-top: 2rem;
@@ -315,7 +399,7 @@ body{
     width: 100%;
     /* height: 40rem; */
     background-size: cover;
-    background-image: url(../images/down.jpg);
+    background-image: url(../images/stheart.jpg);
 }
 
 .order-form{

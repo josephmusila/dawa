@@ -1,8 +1,30 @@
 @media (max-width:990px){
+
+    .hero-section{
+        background-image: none;
+        /* background-size: fill; */
+        overflow: hidden;
+        /* background-color: ; */
+    }
    
 .product-section{
-    border: none;
-    background-color: transparent;
+    /* border: none; */
+    /* background-color: transparent; */
+}
+
+.hero-text{
+    text-align: center;
+    background-image: url(/images/hero.png);
+    object-fit: contain;
+    background-position: center;
+}
+
+.navv{
+    display: none;
+}
+
+#product-1{
+    width: 100%;
 }
 
 .product1-image{
