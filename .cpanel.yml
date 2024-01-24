@@ -1,0 +1,10 @@
+
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/vivatech/repositories/dawa
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/find $DEPLOYPATH -type f -exec /bin/chmod 0644 {} \;
+    - /bin/find $DEPLOYPATH -type d -exec /bin/chmod 0755 {} \;
+    - /bin/chown -R vivatech:vivatech $DEPLOYPATH
+  metadata:
+    version: 1
