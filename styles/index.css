@@ -359,11 +359,11 @@ sect5-image-wrapper{
 .shipping-item{
     position: relative;
     height: 10rem;
-    width: 10rem !important;
+    width: 10rem ;
     overflow-wrap: break-word;
     padding-right: 2rem;
     /* background-color: aqua; */
-    margin: auto;
+    margin: 3rem;
 }
 
 .shipping-item img{
