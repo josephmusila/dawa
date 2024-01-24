@@ -64,7 +64,7 @@ body{
 .navbar.sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     box-shadow: 0 4px 8px rgba(49, 48, 48, 0.486);
     background-color: #777474;
   }
@@ -151,6 +151,7 @@ body{
 .big-sale{
     margin: 2rem 0rem;
     font-size: 1.5rem;
+    text-align: center;
     color: rgb(5, 5, 5);
 }
 
